@@ -164,7 +164,7 @@ status_choice = str(input(f'{INPUT}{cy} Do you wanna add active members?[y/n]: {
                 #if member.username:
                     #username = member.username
                 #else:
-                    $username = ''
+                    #username = ''
                 #writer.writerow([username, member.id, member.access_hash, group.title, group.id])
         #print(f'{success}{lg} Filtered by {w}LastSeenRecently')
         

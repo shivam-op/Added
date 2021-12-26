@@ -153,7 +153,23 @@ if choice == 0:
 else:
     target = str(input(f'{INPUT}{cy} Enter private group link: {r}'))
 print(f'{grey}_'*50)
-#status_choice = str(input(f'{INPUT}{cy} Do you wanna add active members?[y/n]: {r}'))
+#testing...
+status_choice = str(input(f'{INPUT}{cy} Do you wanna add active members?[y/n]: {r}'))
+    if select == 'y':
+        for member in members:
+            accept = True
+            if not member.status == UserStatusRecently():
+                accept = False
+            if accept:
+                if member.username:
+                    username = member.username
+                else:
+                    username = ''
+                writer.writerow([username, member.id, member.access_hash, group.title, group.id])
+        print(f'{success}{lg} Filtered by {w}LastSeenRecently')
+        
+        #tesing_ending.....
+
 to_use = [x for x in accounts[:number_of_accs]]
 for l in to_use: accounts.remove(l)
 with open('vars.txt', 'wb') as f:

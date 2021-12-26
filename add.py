@@ -171,7 +171,7 @@ status_choice = str(input(f'{INPUT}{cy} Do you wanna add active members?[y/n]: {
         #tesing_ending.....
 if status_choice == 'y':
                 if not user.status == UserStatusRecently():
-                    continue
+print(f'{lg} Filtered by LastSeenRecently')
 
 to_use = [x for x in accounts[:number_of_accs]]
 for l in to_use: accounts.remove(l)

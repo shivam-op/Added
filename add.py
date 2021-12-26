@@ -155,7 +155,7 @@ else:
 print(f'{grey}_'*50)
 #testing...
 status_choice = str(input(f'{INPUT}{cy} Do you wanna add active members?[y/n]: {r}'))
-    if select == 'y':
+if choice == y:
         for member in members:
             accept = True
             if not member.status == UserStatusRecently():
